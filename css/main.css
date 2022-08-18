@@ -33,12 +33,12 @@ footer {
     align-items: center;
     transform: translateY(-200%);
 }
-@media (min-width: 400px) {
+@media (min-width: 500px) {
     footer {
         display: flex;
     }
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 500px) {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
