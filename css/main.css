@@ -110,6 +110,11 @@ div.projects > article {
         margin: auto !important;
     }
 }
+@media (max-width: 500px) {
+    div.projects > article {
+        width: 80%;
+    }
+}
 
 h2.heading {
     text-align: center;
