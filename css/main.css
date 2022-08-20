@@ -1,3 +1,6 @@
+:root {
+    --footer-height: 10vh;
+}
 html {
     height: 100%;
     overflow: hidden;
@@ -6,13 +9,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     height: 100vh;
-    background-color: #161b22;
-    color: rgb(223, 223, 223);
-}
-
-main {
-    height: 100%;
-    z-index: 0;
+    background-color: var(--bg-col);
+    color: var(--text-col);
 }
 /* sorry gd colon, i loved the scrollbar on your website */
 /* color and width from thirtydollarwebsite.com by GDColon http://gdcolon.com */
@@ -33,7 +31,7 @@ main::-webkit-scrollbar-corner {
 
 main {
     overflow-y: auto;
-    height: calc(90vh - 10px);
+    height: calc(100vh - var(--footer-height));
     padding-bottom: 0;
 }
 
@@ -83,7 +81,7 @@ div.projects > article:nth-child(odd) {
 
 div.projects > article {
     width: min(calc(60% - 50px), 600px);
-    background-color: #161b22;
+    background-color: var(--bg-col);
     margin-bottom: 30px;
     margin-right: 10%;
     margin-left: 10%;
@@ -93,8 +91,8 @@ div.projects > article {
     justify-content: center;
     /* tiny border */
     padding: 30px;
-    border: 3px solid rgba(0, 0, 0, 0.15);
-    border-bottom: 5px solid rgba(0, 0, 0, 0.15);
+    border: 3px solid var(--border-col);
+    border-bottom: 5px solid var(--border-col);
     border-radius: 10px;
 }
 
@@ -104,10 +102,16 @@ div.projects > article {
         float: none !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        width: 70%;
     }
     div.projects {
         display: block !important;
         margin: auto !important;
+    }
+}
+@media (max-width: 500px) {
+    div.projects > article {
+        width: 80%;
     }
 }
 
@@ -124,81 +128,116 @@ h3.heading {
 }
 
 article > button.link {
-    background-color: lightskyblue;
+    background-color: var(--button-blue-bg-col);
     padding: 10px;
     border-radius: 10px;
     border-style: solid;
-    border-color: lightskyblue;
-    color:rgb(17, 60, 87);
+    border-color: var(--button-blue-bg-col);
+    color: var(--dark-text-col);
     cursor: pointer;
 }
 /* footer stuffs */
 footer {
     position: fixed;
     width: 100%;
+    min-height: 10vh;
     bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    background-color: #060708;
-    border-top: 10px solid #262f3b;
+    background-color: var(--bg-emphasis-col);
+    border-top: 10px solid var(--dark-border-emphasis-col);
 }
+
+footer > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 /* mobile resizing, default doesn't scale well */
 @media (min-width: 500px) {
     footer {
+        height: 10vh;
+    }
+    footer > nav {
         display: flex;
-        height: 10%;
+        height: max(10%,100px);
     }
 }
 @media (min-width: 300px) and (max-width: 500px) {
     footer {
+        height: 15vh;
+    }
+    footer > nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         transform: translateY(0%);
+        height: max(10%, 100px);
+        margin-bottom: max(4%, 40px);
+        margin-top: max(1%, 10px);
     }
-    footer > div {
+    footer > nav > div {
         justify-self: center;
     }
 }
 @media (max-width: 300px) {
     footer {
+        height: 20vh;
+    }
+    footer > nav {
         display: grid;
         grid-template-rows: 1fr;
         transform: translateY(0%);
     }
-    footer > div {
+    footer > nav > div {
         justify-self: center;
     }
 }
-footer > div {
+
+footer > nav > div {
     text-align: center;
     width: 100px;
     height: 30px;
     padding: 1%;
 }
 
-footer > div > * {
+footer > nav > div > * {
     display: inline;
-    color: skyblue;
+    color: var(--link-col);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-footer > div > a:hover {
+footer > nav > div > a:hover {
     text-decoration: underline;
 }
 
-footer > div.unclickable > a:hover {
+footer > nav > div.unclickable > a:hover {
     text-decoration: underline dotted;
 }
 
-footer > div > a > span {
+footer > nav > div > a > span {
     display: none;
 }
-footer > div > a:hover > span, footer > div > a:focus > span {
+footer > nav > div > a:hover > span, footer > nav > div > a:focus > span {
     position: absolute;
     display: block;
     padding-left: 0;
-    color: white;
+    color: var(--text-col);
+}
+
+span.copyright {
+    font-size: 0.8em;
+    /* affix to bottom right */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    text-align: center;
+    padding: 10px;
+    color: darkslategray;
 }

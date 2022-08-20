@@ -1,0 +1,47 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: var(--bg-col);
+    color: var(--text-col);
+
+    margin: 0;
+    text-align: center;
+}
+h1.title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+p {
+    margin: auto;
+    width: min(700px, 80%);
+    font-size: 1.2em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: var(--bg-emphasis-col);
+    color: var(--text-col);
+    padding: 10px;
+    border-top: 10px solid var(--dark-border-emphasis-col);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+nav > a {
+    padding: 20px;
+    text-decoration: none;
+    color: var(--link-col);
+    font-size: 1.2em;
+}
+

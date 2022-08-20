@@ -1,0 +1,13 @@
+:root {
+    --bg-col: #161b22;
+    --bg-emphasis-col: #060708;
+    --text-col: rgb(223, 223, 223);
+    --link-col: skyblue;
+    --dark-text-col: rgb(17, 60, 87);
+    --dark-bg-col: rgb(17, 60, 87);
+    --border-col: rgba(0, 0, 0, 0.15);
+    --dark-border-emphasis-col: #262f3b;
+
+    --button-blue-bg-col: lightskyblue;
+    --button-blue-text-col: var(--dark-text-col);
+}
