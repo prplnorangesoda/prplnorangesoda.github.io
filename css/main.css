@@ -161,7 +161,7 @@ footer > nav {
 /* mobile resizing, default doesn't scale well */
 @media (min-width: 500px) {
     footer {
-        height: 10vh;
+        height: max(10vh, 110px);
     }
     footer > nav {
         display: flex;
@@ -170,7 +170,7 @@ footer > nav {
 }
 @media (min-width: 300px) and (max-width: 500px) {
     footer {
-        height: 15vh;
+        height: max(15vh, 160px);
     }
     footer > nav {
         display: grid;
@@ -186,7 +186,7 @@ footer > nav {
 }
 @media (max-width: 300px) {
     footer {
-        height: 20vh;
+        height: max(25vh, 270px);
     }
     footer > nav {
         display: grid;
