@@ -1,6 +1,3 @@
-:root {
-    --footer-height: 10vh;
-}
 html {
     height: 100%;
     overflow: hidden;
@@ -31,7 +28,7 @@ main::-webkit-scrollbar-corner {
 
 main {
     overflow-y: auto;
-    height: calc(100vh - var(--footer-height));
+    height: calc(90vh - 20px); /* for border of footer, such a **** hack */
     padding-bottom: 0;
 }
 
@@ -140,7 +137,6 @@ article > button.link {
 footer {
     position: fixed;
     width: 100%;
-    min-height: 10vh;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -161,14 +157,17 @@ footer > nav {
 /* mobile resizing, default doesn't scale well */
 @media (min-width: 500px) {
     footer {
-        height: max(10vh, 110px);
+        height: max(10vh - 10px, 110px);
     }
     footer > nav {
         display: flex;
-        height: max(10%,100px);
+        height: max(8vh,60px);
     }
 }
 @media (min-width: 300px) and (max-width: 500px) {
+    main {
+        height: min(100vh - 170px, 100vh - 15vh)
+    }
     footer {
         height: max(15vh, 160px);
     }
@@ -176,7 +175,7 @@ footer > nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         transform: translateY(0%);
-        height: max(10%, 100px);
+        height: max(calc(10vh - 10px), 100px);
         margin-bottom: max(4%, 40px);
         margin-top: max(1%, 10px);
     }
@@ -185,8 +184,12 @@ footer > nav {
     }
 }
 @media (max-width: 300px) {
+    main {
+        height: min(80vh, 100vh - 230px);
+        overflow-x: hidden;
+    }
     footer {
-        height: max(25vh, 270px);
+        height: max(20vh, 220px);
     }
     footer > nav {
         display: grid;
