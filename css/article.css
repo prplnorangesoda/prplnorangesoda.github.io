@@ -1,47 +1,78 @@
 :root {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-body {
-    background-color: var(--bg-col);
-    color: var(--text-col);
 
-    margin: 0;
-    text-align: center;
+body {
+  background-color: var(--bg-col);
+  color: var(--text-col);
+
+  margin: 0;
+  text-align: center;
 }
+main {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, 
+  rgba(255,255,255,0.1) 2%, rgba(255,255,255,0.1) 98%,
+  rgba(255,255,255,0) 100%);
+  width: min(700px, 80%);
+  padding: 30px;
+  margin: auto;
+  height: 100%;
+  padding-bottom: 200px;
+}
+
 h1.title {
-    font-size: 2.5em;
-    margin-bottom: 50px;
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
 }
 
 p {
-    margin: auto;
-    width: min(700px, 80%);
-    font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    background-color: var(--bg-emphasis-col);
-    color: var(--text-col);
-    padding: 10px;
-    border-top: 10px solid var(--dark-border-emphasis-col);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: var(--bg-emphasis-col);
+  color: var(--text-col);
+  padding: 10px;
+  border-top: 10px solid var(--dark-border-emphasis-col);
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-nav > a {
-    padding: 20px;
-    text-decoration: none;
-    color: var(--link-col);
-    font-size: 1.2em;
+nav>a {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--link-col);
+  font-size: 1.2em;
 }
 
+figcaption {
+  background-color: black;
+  padding: 2px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: auto;
+  width: fit-content;
+  color: rgb(181 181 181);
+}
+a {
+  color: var(--link-col);
+}
