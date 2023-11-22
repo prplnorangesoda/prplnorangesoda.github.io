@@ -1,43 +1,35 @@
-html {
-  height: 100%;
-  overflow: hidden;
-}
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  height: 100vh;
   background-color: var(--bg-col);
   color: var(--text-col);
 }
 /* sorry gd colon, i loved the scrollbar on your website */
 /* color and width from thirtydollarwebsite.com by GDColon http://gdcolon.com */
-main::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 12px;
   background: rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
 
-main::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.33);
   border-radius: 10px;
 }
 
-main::-webkit-scrollbar-corner {
+html::-webkit-scrollbar-corner {
   background: rgba(0, 0, 0, 0);
 }
 
 main {
-  overflow-y: auto;
-  height: calc(90vh - 20px); /* for border of footer, such a **** hack */
+  overflow-y: auto; /* for border of footer, such a **** hack */
   padding-bottom: 0;
 }
 
 div.title {
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 div.title > h1 {
@@ -134,100 +126,41 @@ article > button.link {
   color: var(--dark-text-col);
   cursor: pointer;
 }
-/* footer stuffs */
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
-  background-color: var(--bg-emphasis-col);
-  border-top: 10px solid var(--dark-border-emphasis-col);
+  margin-bottom: 30px;
+  gap: 10px;
 }
 
-footer > nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-/* mobile resizing, default doesn't scale well */
-@media (min-width: 500px) {
-  footer {
-    height: max(10vh - 10px, 110px);
-  }
-  footer > nav {
-    display: flex;
-    height: max(8vh,60px);
-  }
-}
-@media (min-width: 300px) and (max-width: 500px) {
-  main {
-    height: min(100vh - 170px, 100vh - 15vh)
-  }
-  footer {
-    height: max(15vh, 160px);
-  }
-  footer > nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    transform: translateY(0%);
-    height: max(calc(10vh - 10px), 100px);
-    margin-bottom: max(4%, 40px);
-    margin-top: max(1%, 10px);
-  }
-  footer > nav > div {
-    justify-self: center;
-  }
-}
-@media (max-width: 300px) {
-  main {
-    height: min(80vh, 100vh - 230px);
-    overflow-x: hidden;
-  }
-  footer {
-    height: max(20vh, 220px);
-  }
-  footer > nav {
-    display: grid;
-    grid-template-rows: 1fr;
-    transform: translateY(0%);
-  }
-  footer > nav > div {
-    justify-self: center;
-  }
-}
-
-footer > nav > div {
+nav > div {
   text-align: center;
-  width: 100px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   padding: 1%;
 }
 
-footer > nav > div > * {
+nav > div > * {
   display: inline;
   color: var(--link-col);
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-footer > nav > div > a:hover {
+nav > div > a:hover {
   text-decoration: underline;
 }
 
-footer > nav > div.unclickable > a:hover {
+nav > div.unclickable > a:hover {
   text-decoration: underline dotted;
 }
 
-footer > nav > div > a > span {
+nav > div > a > span {
   display: none;
 }
-footer > nav > div > a:hover > span, footer > nav > div > a:focus > span {
+nav > div > a:hover > span, footer > nav > div > a:focus > span {
   position: absolute;
   display: block;
   padding-left: 0;
@@ -236,6 +169,7 @@ footer > nav > div > a:hover > span, footer > nav > div > a:focus > span {
 
 span.copyright {
   font-size: 0.8em;
+  background-color: rgba(0, 0, 0, 0.9);
     /* affix to bottom right */
   position: fixed;
   bottom: 0;
