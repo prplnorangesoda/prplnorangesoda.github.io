@@ -1,149 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucy Faria</title>
-    <style>
-        @font-face {
-            font-family: Monaco;
-            src: url(monaco/monaco.ttf);
-        }
-        @font-face {
-            font-family: "Noto Sans";
-            src: url(NotoSans/NotoSans-Regular.otf);
-        }
-        @media screen and (prefers-color-scheme: dark) {
-            :root {
-                background-color: #111;
-                color: #e8e8e8;
-            }
-            a {
-                color: aqua;
-            }
-            a:visited {
-                color: rgb(0, 139, 194);
-            }
-        }
-        @media screen and (prefers-color-scheme: light) {
-            :root {
-                background-color: white;
-                color: #111;
-            }
-        }
-        :root {
-            font-family: "Noto Sans", sans-serif;
-            font-size: medium;
-        }
-        h1 {
-            font-family: serif;
-        }
-        h3 {
-            margin-bottom: 12px;
-            font-size: x-large
-        }
-        h4 {
-            margin: 0;
-        }
-        body {
-            margin: auto;
-            padding: 10px;
-            max-width: 800px;
-            align-self: center;
-        }
-        ul.horizontal {
-            padding: 0; text-align: center;
-        }
-        ul.horizontal li {
-            font-size: larger;
-            padding-left: 0;
-            padding-right: 10px;
-            text-align: center;
-            display: inline;
-        }
-        ul.horizontal li:last-child {
-            padding-right: 0;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-        footer {
-            opacity: 0.6;
-            font-size: 11pt;
-        }
-    </style>
+	<!-- <link rel="preload" href="NotoSans/NotoSans-Regular.otf" as="font" type="font/ttf"> -->
+	<!-- <link rel="preload" href="monaco/monaco.ttf" as="font" type="font/otf"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Lucy Faria's personal website and portfolio.">
+	<title>Lucy Faria</title>
+	<style>
+		@font-face {
+			font-display: swap;
+			font-family: Monaco;
+			src: url(monaco/monaco.ttf);
+		}
+		@font-face {
+			font-display: swap;
+			font-family: "Noto Sans";
+			src: url(NotoSans/NotoSans-Regular.otf);
+		}
+		@media only screen and (prefers-color-scheme: dark) {
+			:root {
+				background-color: #111;
+				color: #e8e8e8;
+			}
+			a {
+				color: aqua;
+			}
+			a:visited {
+				color: rgb(0, 139, 194);
+			}
+		}
+		@media only screen and (prefers-color-scheme: light) {
+			:root {
+				background-color: white;
+				color: #111;
+			}
+			a {
+				color: rgb(0, 81, 188)
+			}
+			a:visited {
+				color: rgb(0, 0, 175)
+			}
+		}
+		:root {
+			font-family: "Noto Sans", sans-serif;
+			font-size: medium;
+		}
+		h1 {
+			font-family: serif;
+		}
+		h3 {
+			margin-bottom: 12px;
+			font-size: x-large
+		}
+		h4 {
+			margin: 0;
+		}
+		body {
+			margin: auto;
+			padding: 10px;
+			max-width: 800px;
+			align-self: center;
+		}
+		hr {
+			border: 0;
+			border-top: 2px solid grey;
+		}
+		details summary {
+			cursor: pointer;
+		}
+		ul.horizontal {
+			padding: 0; text-align: center;
+		}
+		ul.horizontal li {
+			font-size: larger;
+			padding-left: 0;
+			padding-right: 10px;
+			text-align: center;
+			display: inline;
+		}
+		ul.horizontal li:last-child {
+			padding-right: 0;
+		}
+		li {
+			margin-bottom: 0.25em;
+		}
+		footer {
+			opacity: 0.6;
+			font-size: 11pt;
+		}
+	</style>
 </head>
 <body>
-        <h1>Lucy Faria</h1>
-        <h3>Systems, game and graphics developer</h3>
-        <ul class="horizontal">
-            <li><a href="https://www.youtube.com/@lcuy3">youtube</a></li>
-            <li><a href="https://github.com/prplnorangesoda">github</a></li>
-            <li><a href="mailto:me@lucyfaria.net">email me</a></li>
-            <li><a href="https://steamcommunity.com/id/llucy3/">steam</a></li>
-        </ul>
-        <hr>
-        <main>
-            <h3>
-                Projects
-            </h3>
-            <p>
-            <strong>Source available:</strong>
-            <ul>
-                <li>★27 <a href="https://passtime.tf">PASS Fortress</a> (<a href="https://github.com/p4sstime/p4ss">p4sstime/p4ss</a>) - helming the standalone PASS Time mod</li>
-                <li>★6 <a href=https://github.com/p4sstime/p4sstime-server-resources>p4sstime/p4sstime-server-resources</a> - plugins and server configs for TF2 <a href="https://old.passtime.tf">4v4 PASS Time</a> servers </li>
-                <li>★3 <a href=https://github.com/prplnorangesoda/new-shimeji>new-shimeji</a> - unfinished project to have modern linux desktop pets </li>
-            </ul>
-            <strong>Private:</strong>
-            <ul>
-                <li> <a href="https://passtime.tf">passtime.tf</a> - oversaw and helped create the promotional website for PASS Fortress</li>
-                <li> notosu! - like notITG but for osu!standard (in progress, source available soon)</li>
-            </ul>
-            </p>
-            <h3>
-                Blog
-            </h3>
-            <p>
-                haven't written anything up yet. soon, though!
-            </p>
-            <h3>
-                Interests
-            </h3>
-                <p> Rhythm games:
-                    <ul> 
-                    <li><a href="https://www.hajimeli.net/vividstasis">vivid/stasis</a> - <span style="font-family: Monaco; font-size: 24pt;">the stage is set, will you play your role?</span><br>the best game of all time. give it a try, it's incredible (rating 18222)</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Dance_Dance_Revolution">DDR</a> (dance pad, <a href="https://www.nageki-cg.net/ddr/profile/20022049">Nageki profile</a>)</li> 
-                    <li><a href="https://en.wikipedia.org/wiki/In_the_Groove_2">ITGmania</a> (dance pad) </li>
-                    <li><a href="https://github.com/etternagame/etterna">Etterna</a> (aka StepMania, <a href="https://etternaonline.com/users/lcuy">EtternaOnline profile</a>)</li> 
-                    <li><a href="https://rhythmdr.com/">Rhythm Doctor</a>, another incredible game</li>
-                    <li><a href="https://www.unbeatablegame.com/">UNBEATABLE</a>, a third incredible game</li>
-                    <li><a href="https://osu.ppy.sh/">osu!standard</a> (tablet, <a href="https://osu.ppy.sh/users/13085946">osu! profile</a>)</li>
-                    </ul>
-                </p>
-                <p> Other games:
-                    <ul>
-                        <li>Team Fortress 2 Competitive 6s (<a href="https://rgl.gg/Public/PlayerProfile?p=76561198025040446&r=24">RGL profile</a>)</li>
-                        <li>Deadlock</li>
-                    </ul>
-                </p>
-            
-            <h3>
-                Extras
-            </h3>
-                <p>shoutouts to my friends:<br>
-                    renee, daniel (speakers), ben, alex, kev, ren, and mel</p>
-                <p>shoutouts to people that inspire me, in no particular order:<br>
-                    cheryl stelli, my parents, taronuke, speakers, rj lake, peak divide</p>
-                <!-- <details>
-                    <summary><strong>Show boxes</strong></summary>
-                </details> -->
-        </main>
+		<h1 style="font-family: Monaco; font-size: 48px;">Lucy Faria</h1>
+		<h2>Systems, game and graphics developer</h2>
+		<ul class="horizontal">
+			<li><a title="" href="https://www.youtube.com/@lcuy3">youtube</a></li>
+			<li><a href="https://github.com/prplnorangesoda">github</a></li>
+			<li><a href="mailto:me@lucyfaria.net">email me</a></li>
+			<li><a href="https://steamcommunity.com/id/llucy3/">steam</a></li>
+		</ul>
+		<hr>
+		<main>
+			<h3 id="projects">
+				Projects
+			</h3>
+			<p>
+			<strong>Source available:</strong>
+			<ul>
+				<li>★27 <a href="https://passtime.tf">PASS Fortress</a> (<a href="https://github.com/p4sstime/p4ss">p4sstime/p4ss</a>) - helming the standalone PASS Time mod</li>
+				<li>★6 <a href=https://github.com/p4sstime/p4sstime-server-resources>p4sstime/p4sstime-server-resources</a> - plugins and server configs for TF2 <a href="https://old.passtime.tf">4v4 PASS Time</a> servers </li>
+				<li>★3 <a href=https://github.com/prplnorangesoda/new-shimeji>new-shimeji</a> - unfinished project to have modern linux desktop pets </li>
+			</ul>
+			<strong>Private:</strong>
+			<ul>
+				<li> <a href="https://passtime.tf">passtime.tf</a> - oversaw and helped create the promotional website for PASS Fortress</li>
+				<li> notosu! - like notITG but for osu!standard (in progress, source available soon)</li>
+			</ul>
+			</p>
+			<h3 id="blog">
+				Blog
+			</h3>
+			<p>
+				haven't written anything up yet. soon, though!
+			</p>
+			<h3 id="interests">
+				Interests
+			</h3>
+				<details open>
+					<summary>Games</summary>
+					<p> Rhythm games:
+					<ul>
+						<li><a href="https://www.hajimeli.net/vividstasis">vivid/stasis</a> - <span
+								style="font-family: Monaco; font-size: 24pt;">the stage is set, will you play your role?</span><br>the
+							best game of all time. give it a try, it's incredible (rating 18222)</li>
+						<li><a href="https://en.wikipedia.org/wiki/Dance_Dance_Revolution">DDR</a> (dance pad, <a
+								href="https://www.nageki-cg.net/ddr/profile/20022049">Nageki profile</a>)</li>
+						<li><a href="https://en.wikipedia.org/wiki/In_the_Groove_2">ITGmania</a> (dance pad) </li>
+						<li><a href="https://github.com/etternagame/etterna">Etterna</a> (aka StepMania, <a
+								href="https://etternaonline.com/users/lcuy">EtternaOnline profile</a>)</li>
+						<li><a href="https://rhythmdr.com/">Rhythm Doctor</a>, another incredible game</li>
+						<li><a href="https://www.unbeatablegame.com/">UNBEATABLE</a>, a third incredible game</li>
+						<li><a href="https://osu.ppy.sh/">osu!standard</a> (tablet, <a href="https://osu.ppy.sh/users/13085946">osu!
+								profile</a>)</li>
+					</ul>
+					</p>
+					<p> Other games:
+					<ul>
+						<li>Team Fortress 2 Competitive 6s (<a href="https://rgl.gg/Public/PlayerProfile?p=76561198025040446&r=24">RGL
+								profile</a>)</li>
+						<li>Deadlock</li>
+					</ul>
+					</p>
+				</details>
+				<details>
+					<summary>Music (long list)</summary>
+					<p> albums I like: (hover over them!) </p>
+					<ul>
+						<li title="favourites: the whole damn album | INNUENDO IS THE BEST SONG EVER CREATED. Music is also good">underscores - U</li>
+						<li title="favourites: Locals (Girls like us) + Old money bitch | TODAY IS THE BEST DAY OF MY LIFE">underscores - Wallsocket</li>
+						<li title="favourites: Loansharks + Everybody's dead! | i made an osu! map for Everybody's dead!"><strong>underscores - boneyard aka fearmonger</strong></li>
+						<li title="favourites: Spoiled little brat + Bozo bozo bozo + Your favorite sidekick | incredible project."><strong>underscores - fishmonger</strong></li>
+						<li title="favourites: pay attention! | it's 7:32 on a Saturday.">underscores - character development!</li>
+						<li title="favourites: DIRTY! | the first album i listened to and really fell in love with">JPEGMAFIA - LP!</li>
+						<li title="favourites: Macaulay Culkin + Curb Stomp | the experimental sounds on this record are incredible">JPEGMAFIA - Veteran</li>
+						<li title="favourites: Neon Kitchen + Montebello High School Prom | instrumentals and mixing on this project are really soothing">Devon Hendryx "The Rockwood Escape Plan" - JOECHILLWORLD</li>
+						<li title="favourites: the whole damn album | every song in this album is a banger.">D-CELL GAMES (as UNBEATABLE) - ALBUM.</li>
+						<li title="favourites: BANG! + HELD_UP | they cooked with this OST">D-CELL GAMES - UNBEATABLE OST</li>
+						<li title="favourites: angelstar/dark star. need i say more">lexycat - Dark Blossom</li>
+						<li title="favourites: unsure | fire ass modern dariacore">A-Saph - IGNORANT BLISS</li>
+						<li title="favourites: Undone - The Sweater Song | to be honest i dont really like buddy holly">Weezer - Weezer (blue)</li>
+						<li title="favourites: El Scorcho + Pink Triangle">Weezer - Pinkerton</li>
+						<li title="favourites: Ring Ring Ring | adore braggadocious tyler">Tyler, The Creator - DON'T TAP THE GLASS</li>
+						<li title="favourites: Hey Jane + Darling, I + ST. CHROMA | such a pretty album">Tyler, The Creator - CHROMAKOPIA</li>
+						<li>Tyler, The Creator - CALL ME IF YOU GET LOST: The Estate Sale</li>
+						<li>Tyler, The Creator - Flower Boy</li>
+						<li>Tyler, The Creator - Cherry Bomb</li>
+						<li>Tyler, The Creator - Wolf</li>
+						<li>xaev - berdlycore chapter 1</li>
+						<li>xaev - berdlycore chapter 2</li>
+						<li>xaev - berdlycore chapter 0</li>
+						<li>xaev - berdlycore chapter 3</li>
+						<li>Jane Remover - ♡</li>
+						<li>Jane Remover - Revengeseekerz</li>
+						<li>Jane Remover - frailty</li>
+						<li>Kendrick Lamar - GNX</li>
+						<li>Kendrick Lamar - Mr. Morale & The Big Steppers</li>
+						<li>Kendrick Lamar - DAMN.</li>
+						<li><strong>Kendrick Lamar - untitled unmastered.</strong></li>
+						<li>Kendrick Lamar - To Pimp a Butterfly</li>
+						<li><strong>Kendrick Lamar - good kid, m.A.A.d city</strong></li>
+						<li><strong>Kendrick Lamar - Section.80</strong></li>
+						<li>Kendrick Lamar - Overly Dedicated</li>
+						<li>Jamie Paige - Constant Companions</li>
+						<li>SiIvaGunner - INFINITE QUALITY ACHIEVED</li>
+						<li>kouneyagami - HYPERCHROME ETERNAL</li>
+						<li>Arctic Monkeys - Whatever People Say I Am, That's What I'm Not</li>
+						<li>Arctic Monkeys - Favorite Worst Nightmare</li>
+						<li>Danny Brown - Stardust</li>
+						<li>Danny Brown - Quaranta</li>
+						<li>Earl Sweatshirt - Doris</li>
+						<li>Earl Sweatshirt - SICK!</li>
+						<li>Earl Sweatshirt - Some Rap Songs</li>
+						<li title="did you know that garlagan is just one guy">garlagan - If It Will</li>
+						<li title="did you know that garlagan is just one guy">garlagan - 00</li>
+						<li>Femtanyl - CHASER</li>
+						<li>Femtanyl - REACTOR</li>
+						<li title="funny name">ISSBROKIE - SWAGGOT!</li>
+						<li>Ninajirachi - I Love My Computer</li>
+						<li>STOMACH BOOK - GOODNIGHT HYPNOPOMP</li>
+						<li>STOMACH BOOK - STOMACH BOOK</li>
+						<li>Porter Robinson - SMILE! :D</li>
+						<li>Oklou - choke enough</li>
+						<li>BROCKHAMPTON - SATURATION III</li>
+						<li>kimj - KOREAN AMERICAN</li>
+						<li>Way too many artists to list - DAEMON/DOLL</li>
+						<li>Tame Impala - Currents</li>
+						<li>Clipse - Let God Sort Em Out</li>
+						<li>MF DOOM, Madlib - Madvillainy</li>
+						<li>INABAKUMORI - ANTICYCLONE</li>
+						<li>Interpol - Antics</li>
+						<li>Injury Reserve - By The Time I Get To Phoenix</li>
+						<li>Injury Reserve - Injury Reserve</li>
+						<li>J. Cole - 2014 Forest Hills Drive</li>
+						<li>J. Cole - The Warm Up</li>
+						<li>JID - The Forever Story</li>
+						<li>MIMIDEATH - effective. Power</li>
+						<li>MIMIDEATH - FOAR EVERYWUN FROM MIMI</li>
+						<li>Niko B - dog eat dog food world</li>
+						<li>Phoenix - Wolfgang Amadeus Phoenix</li>
+						<li>Playboi Carti - Playboi Carti</li>
+						<li>RAT BOY - SCUM</li>
+						<li>exociety - deception falls</li>
+						<li>Travis Scott - UTOPIA</li>
+						<li>Travis Scott - ASTROWORLD</li>
+						<li>Denzel Curry - KING OF THE MISCHIEVOUS SOUTH</li>
+						<li>Denzel Curry - Melt My Eyez See Your Future</li>
+						<li>Denzel Curry - ZUU</li>
+						<li>Denzel Curry - TA13OO</li>
+						<li>MGMT - Little Dark Age</li>
+						<li>MGMT - Oracular Spectacular</li>
+						<li>Frank Ocean - Blonde</li>
+						<li>Frank Ocean - channel ORANGE</li>
+						<li>Mac Miller - Swimming</li>
+						<li>Lil Yachty - Let's Start Here.</li>
+						<li>Lil Nas X - MONTERO</li>
+						<li>Knucks - ALPHA PLACE</li>
+						<li>Joji - Nectar</li>
+						<li>Joji - BALLADS 1</li>
+						<li>The Living Tombstone - zero_one</li>
+					</ul>
+				</details>
+			
+			<h3 id="extras">
+				Extras
+			</h3>
+				<p>shoutouts to my friends:<br>
+					renee, daniel (speakers), ben, alex, kev, ren, and mel</p>
+				<p>shoutouts to people that inspire me, in no particular order:<br>
+					cheryl stelli, my parents, taronuke, speakers, rj lake, peak divide</p>
+				<p>rest in peace, Gabrielle Gunden.</p>
+				<!-- <details>
+					<summary><strong>Show boxes</strong></summary>
+				</details> -->
+		</main>
 
-        <hr>
-        <footer>
-            <p> copyright Lucy Faria 2026 - <a href="https://github.com/prplnorangesoda/prplnorangesoda.github.io">source</a> available with <a href="LICENSE.txt">0-clause BSD</a></p>
-            <p> uses fonts: Monaco by Jamie Place - <a href="monaco/monaco.ttf">ttf</a>, <a href="monaco/monaco_license.txt">read me.txt</a>, <a href="monaco/monaco_read me.txt">license.txt</a>, Noto Sans - <a href="NotoSans/NotoSans-Regular.otf">ttf</a>, open font license</p>
-            <p> this website was built with <a href="https://motherfuckingwebsite.com/">no javascript</a> and no ai - in hopes for a better internet</p>
-        </footer>
+		<hr>
+		<footer>
+			<p> copyright Lucy Faria 2026 - <a href="https://github.com/prplnorangesoda/prplnorangesoda.github.io">source</a> available with <a href="LICENSE.txt">0-clause BSD</a></p>
+			<p> uses fonts: Monaco by Jamie Place - <a href="monaco/monaco.ttf" aria-label="monaco's ttf file">ttf</a>, <a href="monaco/monaco_license.txt">read me.txt</a>, <a href="monaco/monaco_read me.txt">license.txt</a>, Noto Sans - <a href="NotoSans/NotoSans-Regular.otf" aria-label="notosans' ttf file">ttf</a>, open font license</p>
+			<p> this website was built with <a href="https://motherfuckingwebsite.com/">no javascript</a> and no ai - in hopes for a better internet</p>
+		</footer>
 </body>
 </html>
